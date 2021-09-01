@@ -10,12 +10,9 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-decoration: none;
-}
-
-*, ::before, ::after {
-  box-sizing: border-box;
 }
 
 section {
@@ -34,10 +31,6 @@ section, footer {
 }
 
 a {
-  color: #a3a3a3;
-}
-
-a:hover {
   color: #181818;
 }
 
@@ -72,8 +65,13 @@ nav ul.nav-items {
 }
 
 nav a {
+  color: #a3a3a3;
   display: block;
   padding: 12px;
+}
+
+nav a:hover {
+  color: #181818;
 }
 
 nav div.nav-end {
@@ -116,26 +114,43 @@ div.container-header {
   margin-bottom: 1rem;
 }
 
-div.container-main {
-  margin-left: 2rem;
-  padding: 10px;
-  border-left: 2px solid #6c757d;
-}
-
 /* ========== MATERI ========== */
 
-section#materi div.container ul {
-  list-style: none;
+section#materi div.container-main {
+  display: grid;
+  grid-template-columns: 32.34% 32.34% 32.34%;
+  gap: 18px;
+} 
+
+div.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
 }
 
-section#materi div.container ul li a {
-  color: rgb(24, 24, 24);
-  font-size: 20px;
+div.card img {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-section#materi div.container ul li a:hover {
-  text-decoration: underline;
+div.card div.card-body {
+  padding: 18px;
+  height: 6.4pc;
 }
+
+div.card div.card-body p.card-desc {
+  color: #a3a3a3; 
+}
+
+div.card div.card-footer {
+  padding: 3px 18px;
+  color: #a3a3a3;
+  background-color: #f1f1f1;
+  border-top: 1px solid #d4d4d4;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 /* ========== MATERI ========== */
 
 
@@ -150,7 +165,7 @@ section#tentang div.container p {
 
 /* ========== PENGEMBANG ========== */
 
-section#pengembang div.container-main {
+/* section#pengembang div.container-main {
   border-left: none;
 }
 
@@ -193,7 +208,7 @@ section#pengembang div.card div.card-body div.card-footer ul.list {
 
 section#pengembang div.card div.card-body div.card-footer ul.list li {
   margin-right: 10px;
-}
+} */
 /* ========== PENGEMBANG ========== */
 
 
