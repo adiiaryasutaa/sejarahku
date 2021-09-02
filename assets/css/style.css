@@ -107,11 +107,30 @@ header {
 
 header div.container div.title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 6rem;
   padding: 0 20px 2px 20px;
   letter-spacing: 2px;
   margin-bottom: 2px;
-  font-size: 6rem;
 }
+/* ========== HERO BANNER ========== */
+
+
+
+/* ========== HERO BANNER ========== */
+section#quote div.container {
+  text-align: center;
+}
+
+section#quote div.container div.container-main blockquote {
+  font: 2.5rem Cambria;
+}
+
+section#quote div.container div.container-main div.quote-footer {
+  font-family: Cambria;
+  color: #a3a3a3;
+  margin-top: 2rem;
+}
+
 /* ========== HERO BANNER ========== */
 
 
