@@ -12,6 +12,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #181818;
   text-decoration: none;
 }
 
@@ -30,8 +34,9 @@ section, footer {
   width: var(--xl-breakpoint);
 }
 
-a {
-  color: #181818;
+div.container-header {
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 /* ========== NAVBAR ========== */
@@ -109,10 +114,7 @@ header div.container div.title {
 }
 /* ========== HERO BANNER ========== */
 
-div.container-header {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-}
+
 
 /* ========== MATERI ========== */
 
@@ -160,56 +162,6 @@ section#tentang div.container p {
   font-size: 1.03rem;
 }
 /* ========== TENTANG ========== */
-
-
-
-/* ========== PENGEMBANG ========== */
-
-/* section#pengembang div.container-main {
-  border-left: none;
-}
-
-section#pengembang div.container div.card {
-  display: flex;
-  align-items: center;
-}
-
-section#pengembang div.container div.card img.card-img {
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-section#pengembang div.container div.card:not(:last-child) {
-  margin-bottom: 30px;
-}
-
-section#pengembang div.container div.card div.card-body {
-  border-left: 2px solid #6c757d;
-  padding-left: 10px;
-}
-
-section#pengembang div.container div.card div.card-body div.card-title {
-  font-size: 25px;
-  font-weight: 500;
-}
-
-section#pengembang div.container div.card div.card-body div.card-text {
-  color: #a3a3a3;
-}
-
-section#pengembang div.card div.card-body div.card-footer {
-  margin: 7px 0;
-}
-
-section#pengembang div.card div.card-body div.card-footer ul.list {
-  list-style: none;
-  display: inline-flex;
-}
-
-section#pengembang div.card div.card-body div.card-footer ul.list li {
-  margin-right: 10px;
-} */
-/* ========== PENGEMBANG ========== */
 
 
 
