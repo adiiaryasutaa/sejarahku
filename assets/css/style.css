@@ -20,11 +20,11 @@ a {
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 4rem;
 }
 
 section, footer {
-  margin-top: 2rem;
+  margin-top: 8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,7 +93,7 @@ nav div.nav-end a {
 
 /* ========== HERO BANNER ========== */
 header {
-  height: 90vh;
+  height: 100vh;
   color: white;
   background-color: #4e4e4e;
   display: flex;
@@ -116,7 +116,7 @@ header div.container div.title {
 
 
 
-/* ========== HERO BANNER ========== */
+/* ========== QUOTE ========== */
 section#quote div.container {
   text-align: center;
 }
@@ -130,8 +130,7 @@ section#quote div.container div.container-main div.quote-footer {
   color: #a3a3a3;
   margin-top: 2rem;
 }
-
-/* ========== HERO BANNER ========== */
+/* ========== QUOTE ========== */
 
 
 
@@ -143,27 +142,27 @@ section#materi div.container-main {
   gap: 18px;
 } 
 
-div.card {
+section#materi div.container-main div.card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
 }
 
-div.card img {
+section#materi div.container-main div.card img.card-img {
   width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-div.card div.card-body {
+section#materi div.container-main div.card div.card-body {
   padding: 18px;
   height: 6.4pc;
 }
 
-div.card div.card-body p.card-desc {
+section#materi div.container-main div.card div.card-body p.card-desc {
   color: #a3a3a3; 
 }
 
-div.card div.card-footer {
+section#materi div.container-main div.card div.card-footer {
   padding: 3px 18px;
   color: #a3a3a3;
   background-color: #f1f1f1;
@@ -176,17 +175,79 @@ div.card div.card-footer {
 
 
 
-/* ========== TENTANG ========== */
-section#tentang div.container p {
-  font-size: 1.03rem;
+/* ========== DEVELOPERS ========== */
+section#developers div.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 40rem;
+  align-content: space-between;
+  justify-content: space-around;
 }
-/* ========== TENTANG ========== */
+
+section#developers div.container-main div.card {
+  display: flex;
+  justify-content: space-between;
+  width: 34rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+section#developers div.container-main div.card img.card-img {
+  width: 180px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+section#developers div.container-main div.card div.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+section#developers div.container-main div.card div.card-body div.card-title {
+  font-size: 2.5em;
+}
+
+section#developers div.container-main div.card div.card-body p.card-description {
+  color: #a3a3a3;
+}
+
+section#developers div.container-main div.card div.card-body blockquote.card-quote {
+  margin: 1rem 0;
+  font-family: Cambria;
+  text-align: left;
+}
+
+section#developers div.container-main div.card ul.card-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 1em;
+  padding: 8px;
+  background-color: #f1f1f1;
+  border-left: 1px solid #d4d4d4;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+section#developers div.container-main div.card ul.card-links li a {
+  color: #a3a3a3;
+}
+
+section#developers div.container-main div.card ul.card-links li a:hover {
+  color: #181818;
+}
+/* ========== DEVELOPERS ========== */
 
 
 
 /* ========== FOOTER ========== */
 footer {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   width: 100%;
   background-color: #121212;
   color: white;
@@ -196,5 +257,18 @@ footer {
 
 footer div.container {
   padding: 1.8rem;
+}
+
+footer div.container div.top {
+  margin-bottom: 1rem;
+}
+
+footer div.container div.top a {
+  color: #a3a3a3;
+  margin: 4px;
+}
+
+footer div.container div.top a:hover {
+  color: #f1f1f1;
 }
 /* ========== FOOTER ========== */
