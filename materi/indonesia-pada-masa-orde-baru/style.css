@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+}
+
+.nav-links {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.nav-end {
+    font-size: 28px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav .logo {
+    font-family: Times New Roman;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bagian {
+    padding-top: 5rem;
+}
+
+ul li a {
+    margin-right: 20px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav .nav-end {
+    display: inline;
+}
+
+
+header {
+    background-image: url('Image Orde Baru.jpg');
+    background-size: cover;
+    height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    margin-bottom: 5rem;
+}
+
+
+div.container {
+    width: 80%;
+}
+
+#materi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: godofwar;
+    font-size: 70px;
+    font-weight: 800;
+    color: black;
+}
+
+h2 {
+    font-family: piglets;
+    font-size: 35px;
+    color: black;
+}
+
+p {
+    text-indent: 15px;
+    font-family: stanberry;
+    color: black;
+}
+
+ul {
+    font-family: stanberry;
+    color: black;
+    text-indent: 15px;
+}
+
+.judul {
+    height: 200px;
+    display: inline-block;
+    margin-top: -65px;
+}
