@@ -141,16 +141,16 @@ footer div.container {
   padding: 1.8rem;
 }
 
-footer div.container div.top {
+footer div.container div.top, div.middle {
   margin-bottom: 1rem;
 }
 
-footer div.container div.top a {
+footer div.container div.top a, div.middle a {
   color: #a3a3a3;
   margin: 4px;
 }
 
-footer div.container div.top a:hover {
+footer div.container div.top a:hover, div.middle a:hover {
   color: #f1f1f1;
 }
 /* ========== FOOTER ========== */
