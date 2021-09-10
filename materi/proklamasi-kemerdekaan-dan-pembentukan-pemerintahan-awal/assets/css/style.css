@@ -113,6 +113,15 @@ blockquote dl dt {
   text-decoration: underline;
 }
 
+ul li dl dd::before {
+  content: "-";
+  margin-right: 6px;
+}
+
+table {
+  margin-top: 4px;
+}
+
 table, th, td {
   border: 1px solid gray;
   border-collapse: collapse;
@@ -124,6 +133,25 @@ table tr th, td {
 
 table tr td:nth-child(2) {
   text-align: center;
+}
+
+div.to-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+div.to-top a {
+  padding: 10px;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  color: #121212;
+  transition: 0.2s all;
+}
+
+div.to-top a:hover {
+  background-color: #121212;
+  color: #e6e6e6;
 }
 
 
@@ -141,16 +169,16 @@ footer div.container {
   padding: 1.8rem;
 }
 
-footer div.container div.top, div.middle {
+footer div.container div.top {
   margin-bottom: 1rem;
 }
 
-footer div.container div.top a, div.middle a {
+footer div.container div.top a {
   color: #a3a3a3;
   margin: 4px;
 }
 
-footer div.container div.top a:hover, div.middle a:hover {
+footer div.container div.top a:hover {
   color: #f1f1f1;
 }
 /* ========== FOOTER ========== */
