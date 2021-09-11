@@ -78,10 +78,9 @@ section div.hero-banner img {
 }
 
 section div.sub {
-  margin-bottom: 1.5em;
-
   display: flex;
   flex-direction: column;
+  margin-bottom: 1.5em;
 }
 
 section div.sub div.sub-explanation p {
@@ -96,47 +95,9 @@ section div.sub div.sub-explanation p:not(:first-child) {
 
 
 
-blockquote {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-blockquote dl {
-  width: fit-content;
-  border: 1px solid #e6e6e6;
-  border-radius: 3px;
-  padding: 12px;
-  margin: 8px;
-
-  font-weight: bolder;
-  font-style: italic;
-}
-
-blockquote dl dt {
-  text-decoration: underline;
-}
-
-ul li dl dd::before {
-  content: "-";
-  margin-right: 6px;
-}
-
-table {
-  margin-top: 4px;
-}
-
-table, th, td {
-  border: 1px solid gray;
-  border-collapse: collapse;
-}
-
-table tr th, td {
-  padding: 8px;
-}
-
-table tr td:nth-child(2) {
-  text-align: center;
+ul {
+  list-style: none;
+  margin-left: 2rem;
 }
 
 div.to-top {
