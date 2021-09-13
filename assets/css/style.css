@@ -50,7 +50,7 @@ nav {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
   position: fixed;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -96,9 +96,9 @@ nav div.nav-end a {
 
 /* ========== HERO BANNER ========== */
 header {
-  height: 90vh;
+  height: 100vh;
 
-  background-image: url('../img/hero-banner/hero-banner-img.svg');
+  background-image: url('../img/hero-banner/hero-banner-img.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -121,6 +121,10 @@ header div.container div.title {
   padding: 0 20px 2px 20px;
   letter-spacing: 2px;
   margin-bottom: 2px;
+}
+
+header div.container div.description {
+  color: #a3a3a3;
 }
 /* ========== HERO BANNER ========== */
 
@@ -156,6 +160,10 @@ section#materi div.container-main div.card {
   border-radius: 5px;
 }
 
+section#materi div.container-main div.card:hover {
+  color: rgb(91, 91, 173);
+}
+
 section#materi div.container-main div.card img.card-img {
   width: 100%;
   border-top-left-radius: 5px;
@@ -168,7 +176,7 @@ section#materi div.container-main div.card div.card-body {
 }
 
 section#materi div.container-main div.card div.card-body p.card-desc {
-  color: #a3a3a3; 
+  color: #a3a3a3;
 }
 
 section#materi div.container-main div.card div.card-footer {
