@@ -1,13 +1,13 @@
 html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
 
-* {
+*, ::before, ::after {
+  text-decoration: none;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  text-decoration: none;
 }
 
 body {
@@ -18,134 +18,186 @@ body {
 
 
 
-/* ========== NAV ========== */
-nav {
-  height: 60px;
+/* ========== NAVBAR ========== */
+div.navbar {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  border-bottom: 1px solid #e6e6e6;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+  position: fixed;
 }
 
-nav div.container {
+div.navbar nav {
+  padding: 0 80px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.navbar nav div.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
 }
 
-nav div.container ul.nav-page {
+div.navbar nav div.container div.navbar-brand {
+  padding: 12px;
+}
+
+div.navbar nav div.container div.navbar-brand a {
+  color: #222;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  letter-spacing: 2px;
+  font-size: x-large;
+}
+
+div.navbar nav div.container ul.navbar-items {
+  list-style: none;
+  flex-grow: 1;
+  display: flex;
+}
+
+div.navbar nav div.container ul.navbar-items li a, div.navbar-end a {
+  padding: 12px;
+  font-weight: 500;
+  color: #969699;
+}
+
+div.navbar nav div.container ul.navbar-items li a:hover, div.navbar-end a:hover {
+  color:  #222;
+}
+
+div.navbar nav div.container div.navbar-end a {
+  font-size: 1.5rem;
+}
+/* ========== NAVBAR ========== */
+
+
+
+/* ========== PAGE NAVBAR ========== */
+div.page-navbar {
+  margin-top: 60px;
+  width: 100%;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+div.page-navbar div.container {
+  padding: 12px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div.page-navbar div.container ul.page-navbar-list {
   list-style: none;
   display: flex;
 }
 
-nav div.container ul.nav-page li {
-  margin-right: 8px;
-}
-
-nav div.container ul.nav-page li:not(:first-child)::before {
-  content: "/";
-  margin-right: 8px;
-}
-
-nav div.container ul.nav-page li a:hover {
+div.page-navbar div.container ul.page-navbar-list li a:hover {
   text-decoration: underline;
 }
 
-nav div.container div.author img {
+div.page-navbar div.container ul.page-navbar-list li:not(:first-child)::before {
+  content: "/";
+  margin: auto 8px;
+}
+
+div.page-navbar div.container div#author img {
   vertical-align: middle;
   border-radius: 50%;
   width: 40px;
 }
-/* ========== NAV ========== */
+/* ========== PAGE NAVBAR ========== */
 
 
 
-/* ========== SECTION ========== */
-section {
-  width: 992px;
-  padding: 80px;
-}
-
-section div.main-title {
-  font-size: 2.5rem;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-section div.hero-banner img {
-  width: 100%;
-  margin-bottom: 1.5em;
-}
-
-section div.sub {
-  margin-bottom: 1.5em;
-
+/* ========== MAIN CONTENT ========== */
+div#main-content {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
-section div.sub div.sub-explanation p {
+div#main-content div.container {
+  padding: 10px;
+  width: 70%;
+}
+
+div#main-content div.container h1.main-content-title {
+  font-size: 2.1999rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 8px;
+}
+
+div#main-content div.container img.hero-banner {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5em;
+}
+
+div#main-content div.container div {
+  margin-bottom: 12px;
+}
+
+div#main-content div.container div p {
   text-align: justify;
-  font-size: large;
 }
 
-section div.sub div.sub-explanation p:not(:first-child) {
-  margin-top: 1rem;
+div#main-content div.container div p:not(:last-child) {
+  margin-bottom: 12px;
 }
-/* ========== SECTION ========== */
 
-
-
-blockquote {
+div#main-content div.container div blockquote {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-blockquote dl {
+div#main-content div.container div blockquote dl {
   width: fit-content;
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   padding: 12px;
   margin: 8px;
-
   font-weight: bolder;
   font-style: italic;
 }
 
-blockquote dl dt {
+div#main-content div.container div blockquote dl dt {
   text-decoration: underline;
 }
 
-ul li dl dd::before {
+div#main-content div.container div ul li dl dd::before {
   content: "-";
   margin-right: 6px;
 }
 
-table {
+div#main-content div.container div table {
   margin-top: 4px;
 }
 
-table, th, td {
+div#main-content div.container div table, th, td {
   border: 1px solid gray;
   border-collapse: collapse;
 }
 
-table tr th, td {
+div#main-content div.container div table tr th, td {
   padding: 8px;
 }
 
-table tr td:nth-child(2) {
+div#main-content div.container div table tr td:nth-child(2) {
   text-align: center;
 }
 
-div.to-top {
+/* ========== BACK TO TOP ========== */
+div#to-top {
   display: flex;
   justify-content: center;
   margin-top: 4rem;
 }
 
-div.to-top a {
+div#to-top a {
   padding: 10px;
   border: 1px solid #a3a3a3;
   border-radius: 3px;
@@ -153,10 +205,13 @@ div.to-top a {
   transition: 0.2s all;
 }
 
-div.to-top a:hover {
+div#to-top a:hover {
   background-color: #121212;
   color: #e6e6e6;
 }
+/* ========== BACK TO TOP ========== */
+
+/* ========== MAIN CONTENT ========== */
 
 
 
@@ -173,16 +228,16 @@ footer div.container {
   padding: 1.8rem;
 }
 
-footer div.container div.top {
+footer div.container div.navigations {
   margin-bottom: 1rem;
 }
 
-footer div.container div.top a {
+footer div.container div.navigations a {
   color: #a3a3a3;
   margin: 4px;
 }
 
-footer div.container div.top a:hover {
+footer div.container div.navigations a:hover {
   color: #f1f1f1;
 }
 /* ========== FOOTER ========== */
