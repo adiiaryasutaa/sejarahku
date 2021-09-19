@@ -1,12 +1,12 @@
 html {
   scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-* {
+*, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -148,17 +148,19 @@ section#quote div.container div.container-main div.quote-footer {
 /* ========== MATERI ========== */
 section#materi div.container-main {
   display: grid;
-  grid-template-columns: 32.34% 32.34% 32.34%;
-  gap: 18px;
-} 
+  grid-template-columns: repeat(3, calc((100% - (28px * 2)) / 3));
+  gap: 28px;
+}
 
 section#materi div.container-main div.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 5px;
 }
 
 section#materi div.container-main div.card:hover {
-  color: rgb(91, 91, 173);
+  box-shadow: 0 1px 5px rgb(0 0 0 / 22%);
 }
 
 section#materi div.container-main div.card img.card-img {
@@ -168,12 +170,19 @@ section#materi div.container-main div.card img.card-img {
 }
 
 section#materi div.container-main div.card div.card-body {
+  flex-grow: 1;
   padding: 18px;
-  height: 6.4pc;
+  height: 8rem;
+}
+
+section#materi div.container-main div.card div.card-body h4.card-title {
+  flex-grow: 1;
 }
 
 section#materi div.container-main div.card div.card-body p.card-desc {
   color: #a3a3a3;
+  font-size: small;
+  text-align: justify;
 }
 
 section#materi div.container-main div.card div.card-footer {
@@ -230,7 +239,7 @@ section#developers div.container-main div.card div.card-body p.card-description 
 
 section#developers div.container-main div.card div.card-body blockquote.card-quote {
   margin: 1rem 0;
-  font-family: Cambria;
+  font-family: 'Times New Roman', Times, serif;
   text-align: left;
 }
 
