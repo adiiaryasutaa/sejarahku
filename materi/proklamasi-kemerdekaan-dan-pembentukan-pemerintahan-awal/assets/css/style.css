@@ -168,9 +168,19 @@ div#main-content div.container div blockquote dl dt {
   text-decoration: underline;
 }
 
-div#main-content div.container div ul li dl dd::before {
-  content: "-";
-  margin-right: 6px;
+div#main-content div.container div ul {
+  list-style: none;
+  margin-left: 18px;
+  padding-left: 8px;
+  border-left: 1.3px solid #a3a3a3;
+}
+
+div#main-content div.container div ul > li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+div#main-content div.container div ul li ol {
+  margin-left: 24px;
 }
 
 div#main-content div.container div table {
