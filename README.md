@@ -13,8 +13,6 @@ Website ini kami ciptakan sebagai proyek tugas Pemrograman Web dan Perangkat Ber
 * [Iqbal Faturrohim](https://github.com/iqbalfaturrohim)
 * [Sulton Akbar](https://github.com/sultonakbar)
 
-# 
-
 <div align="center">
   © 2021 Power Rangers | Made with <span style="color: red;">❤</span> in Bali, Indonesia
 </div>  
