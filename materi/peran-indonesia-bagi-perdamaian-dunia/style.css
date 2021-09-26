@@ -1,0 +1,370 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    z-index: 2;
+}
+
+.nav-links {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.nav-end {
+    font-size: 28px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav .logo {
+    font-family: Times New Roman;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bagian {
+    padding-top: 5rem;
+}
+
+ul li a {
+    margin-right: 20px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav .nav-end {
+    display: inline;
+}
+
+
+header {
+    /* background-image: url('image/indonesia-pada-masa-orde-baru.jpg'); */
+    /* background-size: cover; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: 36.5px;
+}
+
+header div {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+div.container {
+    width: 80%;
+}
+
+#materi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35rem;
+}
+
+h1 {
+    font-family: godofwar;
+    font-size: 70px;
+    font-weight: 800;
+    color: black;
+}
+
+h2 {
+    font-family: piglets;
+    font-size: 35px;
+    color: black;
+}
+
+p {
+    text-indent: 20px;
+    font-family: stanberry;
+    color: black;
+}
+
+ul {
+    font-family: stanberry;
+    color: black;
+    text-indent: 20px;
+}
+
+.judul {
+    height: 200px;
+    display: inline-block;
+    margin-top: -65px;
+}
+
+ul li ul {
+    margin-left: 37px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    /* margin-top: 5rem; */
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div.container {
+    padding: 1.8rem;
+}
+
+footer div.container div.top {
+    margin-bottom: 1rem;
+}
+
+footer div.container div.top a {
+    color: #a3a3a3;
+    margin: 4px;
+}
+
+footer div.container div.top a:hover {
+    color: #f1f1f1;
+}
+
+/* ========== FOOTER ========== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px rgb(0 0 0 / 8%);
+    z-index: 2;
+}
+
+.nav-links {
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.logo {
+    font-size: 60px;
+}
+
+.nav-end {
+    font-size: 28px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+}
+
+nav a:hover {
+    color: rgb(0, 0, 0);
+}
+
+nav .logo {
+    font-family: Times New Roman;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bagian {
+    padding-top: 5rem;
+}
+
+ul li a {
+    margin-right: 20px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+nav .nav-end {
+    display: inline;
+}
+
+
+header {
+    /* background-image: url('image/indonesia-pada-masa-orde-baru.jpg'); */
+    /* background-size: cover; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    left: 36.5px;
+}
+
+header div {
+    position: absolute;
+    top: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+div.container {
+    width: 80%;
+}
+
+#materi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35rem;
+}
+
+h1 {
+    font-family: godofwar;
+    font-size: 70px;
+    font-weight: 800;
+    color: black;
+}
+
+h2 {
+    font-family: piglets;
+    font-size: 35px;
+    color: black;
+}
+
+p {
+    text-indent: 20px;
+    font-family: stanberry;
+    color: black;
+}
+
+ul {
+    font-family: stanberry;
+    color: black;
+    text-indent: 20px;
+}
+
+.judul {
+    height: 200px;
+    display: inline-block;
+    margin-top: -65px;
+}
+
+ul li ul {
+    margin-left: 37px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+    /* margin-top: 5rem; */
+    width: 100%;
+    background-color: #121212;
+    color: white;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div.container {
+    padding: 1.8rem;
+}
+
+footer div.container div.top {
+    margin-bottom: 1rem;
+}
+
+footer div.container div.top a {
+    color: #a3a3a3;
+    margin: 4px;
+}
+
+footer div.container div.top a:hover {
+    color: #f1f1f1;
+}
+
+/* ========== FOOTER ========== */
