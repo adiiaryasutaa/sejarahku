@@ -35,15 +35,20 @@ div.container-header {
 }
 
 /* ========== NAVBAR ========== */
-div.navbar {
+div#navbar {
   width: 100%;
   height: 60px;
-  background-color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+  background-color: transparent;
   position: fixed;
+  transition: all 0.3s;
 }
 
-div.navbar nav {
+div#navbar.scrolled {
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 4px 0px;
+}
+
+div#navbar nav {
   padding: 0 80px;
   height: 100%;
   display: flex;
@@ -51,40 +56,50 @@ div.navbar nav {
   justify-content: center;
 }
 
-div.navbar nav div.container {
+div#navbar nav div.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-div.navbar nav div.container div.navbar-brand {
+div#navbar nav div.container div.navbar-brand {
   padding: 12px;
 }
 
-div.navbar nav div.container div.navbar-brand a {
-  color: #222;
+div#navbar nav div.container div.navbar-brand a {
+  color: #fff;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   letter-spacing: 2px;
   font-size: x-large;
 }
 
-div.navbar nav div.container ul.navbar-items {
+div#navbar.scrolled nav div.container div.navbar-brand a {
+  color: #222;
+}
+
+div#navbar nav div.container ul.navbar-items {
   list-style: none;
   flex-grow: 1;
   display: flex;
 }
 
-div.navbar nav div.container ul.navbar-items li a, div.navbar-end a {
+div#navbar nav div.container ul.navbar-items li a, div.navbar-end a {
   padding: 12px;
   font-weight: 500;
   color: #969699;
 }
 
-div.navbar nav div.container ul.navbar-items li a:hover, div.navbar-end a:hover {
-  color:  #222;
+div#navbar nav div.container ul.navbar-items li a:hover,
+div#navbar nav div.container div.navbar-end a:hover {
+  color: #797979;
 }
 
-div.navbar nav div.container div.navbar-end a {
+div#navbar.scrolled nav div.container ul.navbar-items li a:hover,
+div#navbar.scrolled nav div.containerdiv.navbar-end a:hover {
+  color:#222;
+}
+
+div#navbar nav div.container div.navbar-end a {
   font-size: 1.5rem;
 }
 /* ========== NAVBAR ========== */
